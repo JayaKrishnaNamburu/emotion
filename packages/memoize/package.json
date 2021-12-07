@@ -5,6 +5,14 @@
   "main": "dist/emotion-memoize.cjs.js",
   "module": "dist/emotion-memoize.esm.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-memoize.browser.esm.js",
+        "default": "./dist/emotion-memoize.browser.cjs.js"
+      }
+    }
+  },
   "license": "MIT",
   "repository": "https://github.com/emotion-js/emotion/tree/main/packages/memoize",
   "scripts": {

@@ -4,6 +4,14 @@
   "description": "Shared utilities for emotion primitives and native",
   "main": "dist/emotion-primitives-core.cjs.js",
   "module": "dist/emotion-primitives-core.esm.js",
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-primitives-core.browser.esm.js",
+        "default": "./dist/emotion-primitives-core.browser.cjs.js"
+      }
+    }
+  },
   "scripts": {
     "test:typescript": "exit 0"
   },

@@ -7,6 +7,14 @@
     "./dist/emotion-react.cjs.js": "./dist/emotion-react.browser.cjs.js",
     "./dist/emotion-react.esm.js": "./dist/emotion-react.browser.esm.js"
   },
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-react.browser.esm.js",
+        "default": "./dist/emotion-react.browser.cjs.js"
+      }
+    }
+  },
   "types": "types/index.d.ts",
   "files": [
     "src",

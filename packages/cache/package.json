@@ -8,6 +8,14 @@
     "./dist/emotion-cache.cjs.js": "./dist/emotion-cache.browser.cjs.js",
     "./dist/emotion-cache.esm.js": "./dist/emotion-cache.browser.esm.js"
   },
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-cache.browser.esm.js",
+        "default": "./dist/emotion-cache.browser.cjs.js"
+      }
+    }
+  },
   "types": "types/index.d.ts",
   "license": "MIT",
   "repository": "https://github.com/emotion-js/emotion/tree/main/packages/cache",

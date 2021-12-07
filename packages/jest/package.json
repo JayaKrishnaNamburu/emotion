@@ -5,6 +5,12 @@
   "main": "dist/emotion-jest.cjs.js",
   "module": "dist/emotion-jest.esm.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "module": "./dist/emotion-jest.esm.js",
+      "default": "./dist/emotion-jest.cjs.js"
+    }
+  },
   "files": [
     "src",
     "dist",

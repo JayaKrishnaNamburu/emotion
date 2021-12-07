@@ -8,6 +8,14 @@
     "./dist/emotion-sheet.cjs.js": "./dist/emotion-sheet.browser.cjs.js",
     "./dist/emotion-sheet.esm.js": "./dist/emotion-sheet.browser.esm.js"
   },
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-sheet.browser.esm.js",
+        "default": "./dist/emotion-sheet.browser.cjs.js"
+      }
+    }
+  },
   "types": "types/index.d.ts",
   "license": "MIT",
   "scripts": {

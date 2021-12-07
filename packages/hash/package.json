@@ -5,6 +5,14 @@
   "main": "dist/emotion-hash.cjs.js",
   "module": "dist/emotion-hash.esm.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-hash.browser.esm.js",
+        "default": "./dist/emotion-hash.browser.cjs.js"
+      }
+    }
+  },
   "license": "MIT",
   "repository": "https://github.com/emotion-js/emotion/tree/main/packages/hash",
   "publishConfig": {

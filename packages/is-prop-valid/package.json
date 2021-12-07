@@ -5,6 +5,14 @@
   "main": "dist/emotion-is-prop-valid.cjs.js",
   "module": "dist/emotion-is-prop-valid.esm.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-is-prop-valid.browser.esm.js",
+        "default": "./dist/emotion-is-prop-valid.browser.cjs.js"
+      }
+    }
+  },
   "license": "MIT",
   "repository": "https://github.com/emotion-js/emotion/tree/main/packages/is-prop-valid",
   "scripts": {

@@ -4,6 +4,11 @@
   "description": "Extract and inline critical css with emotion for server side rendering.",
   "main": "dist/emotion-server.cjs.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/emotion-server.browser.cjs.js"
+    }
+  },
   "files": [
     "src",
     "dist",

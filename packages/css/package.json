@@ -5,6 +5,14 @@
   "main": "dist/emotion-css.cjs.js",
   "module": "dist/emotion-css.esm.js",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "module": "./dist/emotion-css.esm.js",
+        "default": "./dist/emotion-css.cjs.js"
+      }
+    }
+  },
   "files": [
     "src",
     "dist",
